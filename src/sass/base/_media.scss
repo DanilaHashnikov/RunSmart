@@ -1,0 +1,112 @@
+@media (max-width: 992px) {
+    .header {
+        padding: 0 70px 0 70px;
+    }
+    .promo__wrapper {
+        padding: 0 70px 0 0;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        padding : 0 15px 0 15px;
+        &__logo {
+            width: 170px;
+        }
+        &__phone {
+            font-size: 15px;
+        }
+    }
+    .promo {
+        &__wrapper {
+            padding-right: 15px;
+        }
+    }
+    .button {
+        width: 265px;
+    }
+    .button_adaptation {
+        width: 135px;
+        margin-top: 5px;
+    }
+    .advantages {
+        &__txt {
+            font-size: 13px;
+            font-weight: 600;
+        }
+        &__subtitle {   
+            font-size: 18px;
+            text-align: center;
+            padding-top: 15px;
+        }
+        &__wrapper {
+            padding-top: 40px;
+            margin: 0 30px 0 30px;
+            flex-wrap: wrap;
+        }
+        &__img {
+            margin-top: 50px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column;
+        padding: 0 5px 0 5px;
+        &__official {
+            display: none;
+        }
+        &__logo {
+            width: 250px;
+        }
+        &__contacts {
+            padding-top: 15px;
+        }
+        &__phone {
+            font-size: 20px;
+        }
+    }
+    .button_main {
+        width: 230px;
+    }
+    .button_adaptation {
+        height: 40px;
+        width: 185px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    .promo {
+        &__header {
+            font-size: 25px;
+        }
+        &__subheader {
+            font-size: 21px;
+            margin-top: 0;
+            text-align: right;
+        }
+        &__wrapper {
+            padding-right: 10px;
+        }
+        &__icons {
+            flex-wrap: wrap;
+        }
+    }
+    .advantages {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__img {
+            margin-top: 40px;
+        }
+        &__subtitle {
+            padding-top: 20px;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .header {
+        padding-top: 1;
+    }
+    &__logo {
+        width: 50px;
+    }
+}
