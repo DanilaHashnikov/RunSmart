@@ -28,6 +28,16 @@
     .feed-form {
         margin: 0 35px 0 35px;
     }
+    .carousel {
+        &__inner {
+            width: 730px;
+        }
+    }
+    .catalog {
+        &__content {
+            padding: 0 55px;
+        }
+    }
 }
 @media (max-width: 768px) {
     .promo {
@@ -77,8 +87,37 @@
         padding-right: 0;
         font-size: 24px;
     }
+    .catalog {
+        &__content {
+            padding: 0 118px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 566px;
+        }
+        &__img {
+            width: 100%;
+        }
+    }
 }
 @media (max-width: 576px) {
+    .promo {
+        &__header {
+            font-size: 25px;
+        }
+        &__subheader {
+            font-size: 21px;
+            margin-top: 0;
+            text-align: right;
+        }
+        &__wrapper {
+            padding-right: 10px;
+        }
+        &__icons {
+            flex-wrap: wrap;
+        }
+    }
     .header {
         flex-direction: column;
         padding: 0 5px 0 5px;
@@ -103,22 +142,6 @@
         width: 185px;
         font-size: 16px;
         margin-top: 15px;
-    }
-    .promo {
-        &__header {
-            font-size: 25px;
-        }
-        &__subheader {
-            font-size: 21px;
-            margin-top: 0;
-            text-align: right;
-        }
-        &__wrapper {
-            padding-right: 10px;
-        }
-        &__icons {
-            flex-wrap: wrap;
-        }
     }
     .advantages {
         padding: 40px 0 50px 0;
@@ -145,8 +168,50 @@
             padding-right: 0;
         }
     }
+    .carousel {
+        &__inner {
+            width: 309px;
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+
     .button_submit {
         width: 238px;
+    }
+    .consultation {
+        padding-bottom: 60px;
+        &__descr {
+            margin-bottom: 40px;
+            margin-top: 30px;
+        }
+    }
+    .catalog {
+        &__content {
+            padding: 0 0;
+        }
+        .title {
+            padding-top: 50px;
+        }
+        &__tabs {
+            flex-wrap: wrap;
+        }
+        &__tab {
+            margin: 10px 5px;
+        }
+    }
+    .reviews {
+        &__blocks {
+            flex-direction: column;
+            padding-top: 50px;
+        }
+        &__subtitle {
+            padding-top: 30px;
+        }
+        &__inner_block {
+            padding-left: 23px;
+        }
     }
 }
 @media (max-width: 320px) {
