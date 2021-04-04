@@ -23,9 +23,11 @@
         font-size: 18px;
         display: block;
         font-weight: 700;
+        text-decoration: none;
         &:hover {
             color: white;
             text-decoration: none;
+            text-decoration: underline;
         }
     }
     &__contacts {

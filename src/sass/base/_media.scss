@@ -22,7 +22,7 @@
     }
     .consultation {
         &__descr {
-            padding: 0 35px 0 35px;
+            padding: 20px 35px 40px 35px;
         }
     }
     .feed-form {
@@ -37,6 +37,9 @@
         &__content {
             padding: 0 55px;
         }
+    }
+    .reviews {
+        padding-bottom: 60px;
     }
 }
 @media (max-width: 768px) {
@@ -87,17 +90,31 @@
         padding-right: 0;
         font-size: 24px;
     }
-    .catalog {
-        &__content {
-            padding: 0 118px;
-        }
-    }
     .carousel {
         &__inner {
             width: 566px;
         }
         &__img {
             width: 100%;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-wrap: wrap;
+        }
+        &__tab {
+            margin-top: 10px;
+        }
+    }
+    .title {
+        padding-top: 60px;
+    }
+}
+@media (max-width: 750px) {
+    .catalog {
+        .catalog-item {
+            display: block;
+            margin: 0 auto;
         }
     }
 }
@@ -223,5 +240,10 @@
     }
     &__logo {
         width: 50px;
+    }
+    .catalog {
+        .title {
+            padding-top: 0;
+        }
     }
 }
