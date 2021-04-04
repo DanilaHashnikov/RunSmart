@@ -119,6 +119,9 @@
     }
 }
 @media (max-width: 576px) {
+    .feed-form {
+        width: 238px;
+    }
     .promo {
         &__header {
             font-size: 25px;
