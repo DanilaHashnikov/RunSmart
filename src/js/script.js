@@ -43,11 +43,7 @@ $(document).ready(function(){
 
     $('.modal__close').on('click', function(){
       $('.overlay, #consultation, #thanks, #order').fadeOut('slow')
-    })
-
-    // $('.button_mini').on('click', function(){
-    //   $('.overlay, #order').fadeIn('slow');
-    // })
+    });
 
     $('.button_mini').each(function(i){
       $(this).on('click', function() {
@@ -55,4 +51,30 @@ $(document).ready(function(){
         $('.overlay, #order').fadeIn('slow');
       })
     });
+    
+    function valideForm(form){
+      $(form).validate({
+        rules: {
+          name: 'required',
+          phone: 'required',
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          name: "Пожалуйтса, введите своё имя",
+          phone: 'Пожалуйтса, введите свой номер телефона ',
+          email: {
+            required: "Пожалуйста, введите свою почту",
+            email: "Неправильно введёт адрес почты"
+          }
+        }
+      });
+    };
+
+    valideForm('#consultation-form');
+    valideForm('#consultation form');
+    valideForm('#order form');
+
   });
