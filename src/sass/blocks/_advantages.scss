@@ -16,6 +16,12 @@
     &__img {
         max-width: 70px;
         max-height: 70px; 
+        &_animation {
+            animation-name: heartbeat;
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
     }
     &__subtitle {
         padding-top: 46px;

@@ -77,4 +77,29 @@ $(document).ready(function(){
     valideForm('#consultation form');
     valideForm('#order form');
 
+    $('form').submit(function(e) {
+      e.preventDefault();
+      $.ajax({
+          type: "POST",
+          url: "mailer/smart.php",
+          data: $(this).serialize()
+      }).done(function() {
+          $(this).find("input").val("");
+          $('#consultation, #order').fadeOut();
+          $('.overlay, #thanks').fadeIn('slow');
+
+          $('form').trigger('reset');
+      });
+      return false;
+  });
+
+  //smooth scrool and page up
+
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 700) {
+        $('.pageup'). fadeIn();   
+      } else {
+        $('.pageup').fadeOut();
+      }
+    });
   });
